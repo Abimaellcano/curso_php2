@@ -24,12 +24,15 @@ foreach($array as $clave => $valor){
 $laptop=["Acer Nitro 5", "Windows 11", "AMD Ryzen 4600H", "SSD 256GB", "RAM 24GB"];
 
 
-foreach($laptop as $pc){
-    echo $pc. "<br>";
+// foreach($laptop as $pc){
+//     echo $pc. "<br>";
+// }
 
-
+foreach($laptop as $clave => $pc){
+    echo $clave. " - " .$pc. "<br>";
 }
 
+// la variable a recorrer puede llevar cualquier nombre por ejemplo pc, laptops, computadoras, equipo, valor etc
 
 //Ejemplo 2
 
@@ -49,12 +52,15 @@ foreach($frutas as $clave => $valor){
 
 //Ejemplo 3
 
-$productos =[
-    ["codigo" => "A0001", "descripcion"],
-
-
-
+$productos = [
+    ["codigo" => "A0001", "descripcion" => "Mouse"],
+    ["codigo" => "A0002", "descripcion" => "Teclado"],
+    ["codigo" => "A0003", "descripcion" => "Impresora"],
+    ["codigo" => "A0004", "descripcion" => "Monitor"],
 ];
 
+foreach($productos as $prod){
+    echo $prod["codigo"]." - ".$prod["descripcion"]. "<br>";
+}
 
 ?>
