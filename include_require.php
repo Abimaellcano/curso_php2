@@ -10,6 +10,7 @@ include"ruta_archivo.php";
 
 include_once("ruta_archivo.php");
 include_once "ruta_archivo.php";
+El código se coloca una sola vez
 
 
 
@@ -23,3 +24,4 @@ require"ruta_archivo.php";
 
 require_once("ruta_archivo.php");
 require_once "ruta_archivo.php";
+El código se coloca una sola vez
